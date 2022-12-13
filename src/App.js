@@ -9,7 +9,7 @@ function App() {
       <main className="Main">
         <Accommodations />
       </main>
-      <footer>by Riz</footer>
+      <footer>Placeholder footer</footer>
     </div>
   );
 }
