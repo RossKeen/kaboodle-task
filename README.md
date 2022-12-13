@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Accommodate!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For this task I added cards for each accommodation object in the data and selected which information to display.
 
-## Available Scripts
+I allowed the user to view rooms if any were available by pressing a button. This gives the user information about each room that the accomodation offers and gives the availability of these rooms, informing the user if there are no rooms left. The 'book now!' buttons are just placeholders.
 
-In the project directory, you can run:
+I added some utility functions to run checks on the data since it was cumbersome to do this in my components.
 
-### `npm start`
+## If I had more time...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 🎨 Styling:
+  - Make the information more readable and laid out in a better way.
+  - Add a grid layout which is responsive to screen size.
+  - It would be nice if the room view was in a better place and the screen was reorganised to accomodate this.
+  - More reaction to users such as shadows, highlights and click responses.
+  - Show only a limited amount of cards and allow the user to expand this either through pressing a button or scrolling.
+  - Show the star rating actually as stars ⭐️
+- 🔀 Routing:
+  - I had initially planned for each accommodation card to be smaller and clickable which would route to a page dedicated to that accommodation. This would solve some of the styling issues and make the page look neater with less cluttering information. However, given my limited time I decided to do this task on a single route.
+- ⏳ Filtering:
+  - It is not very user friendly that the accommodation appears in no particular order.
+  - I considered making accommodation that was completely sold out not appear for the user, but this could be better integrated in a filtering system.
+  - It would be useful if you could filter by availabilty, location, room type, accommodation type, price etc...
+  - More complex filtering could be added like using sliders for price or distance from the event.
+- 🔒 Security:
+  - I used dangerouslySetInnerHTML to parse the accommodation descriptions into HTML. This is fine for the current data, but this would need to be sanitised if this data was able to be inputted by a user.
+- 💭 Other ideas:
+  - The data was very rich and gave lots of cool ideas of what might be possible to add.
+  - Location data - could show a map of the accommodation location using a mapping API.
+  - Show facilities available to each room.
+  - Allow users to change the currency.
