@@ -19,11 +19,9 @@ const AccommodationItem = ({ accommodation }) => {
         <b>{accommodation.type.name}</b>
       </p>
       <p>{accommodation.rating.id} Stars</p>
-      <div class="grid-container">
-        <img src={accommodation.images[0].filename} className="AccommodationImage" class="grid-item"></img>
-        <div className="Description" class="grid-item">
-          <p dangerouslySetInnerHTML={descriptionHTML}></p>
-        </div>
+      <img src={accommodation.images[0].filename} className="AccommodationImage"></img>
+      <div className="Description">
+        <p dangerouslySetInnerHTML={descriptionHTML}></p>
       </div>
       <b>Facilities:</b>
       <ul className="List">

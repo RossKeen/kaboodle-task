@@ -14,8 +14,7 @@
 }
 
 .AccommodationImage {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  max-height: 15rem;
 }
 
 .Description {
@@ -50,13 +49,4 @@
   border-color: rgb(186, 102, 34);
   margin: 0.4rem;
   overflow: visible;
-}
-
-.SummaryRow {
-  width: 20%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
 }
