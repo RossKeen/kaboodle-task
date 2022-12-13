@@ -1,21 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #282c34;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +13,50 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.AccommodationImage {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Description {
+  height: 10rem;
+  overflow: scroll;
+  border-style: solid;
+  border-radius: 0.1rem;
+}
+
+.List {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 15%;
+}
+
+.ListItem {
+  border-style: solid;
+  border-width: 1rem;
+  border-color: rgb(186, 102, 34);
+  padding: 16px;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5px;
+  background-color: rgb(250, 252, 209);
+}
+
+.RoomCard {
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: rgb(186, 102, 34);
+  margin: 0.4rem;
+  overflow: visible;
+}
+
+.SummaryRow {
+  width: 20%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
 }
